@@ -1,4 +1,304 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title "Telemetry unit"
+Date "2021-01-29"
+Rev "1.0"
+Comp "KTHFS"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	9100 3500 9100 3300
+$Comp
+L Device:Antenna AE?
+U 1 1 60144042
+P 9100 3100
+F 0 "AE?" H 9180 3089 50  0001 L CNN
+F 1 "Antenna" H 9180 3043 50  0000 L CNN
+F 2 "" H 9100 3100 50  0001 C CNN
+F 3 "~" H 9100 3100 50  0001 C CNN
+	1    9100 3100
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6000 3000 1100 1000
+U 60144969
+F0 "tranciever" 59
+F1 "traciever.sch" 59
+F2 "SLCK" I L 6000 3300 59 
+F3 "MOSI" I L 6000 3400 59 
+F4 "MISO" O L 6000 3500 59 
+F5 "~SS" I L 6000 3600 59 
+$EndSheet
+$Sheet
+S 7300 3000 1100 1000
+U 60144AA2
+F0 "PA" 59
+F1 "PA.sch" 59
+$EndSheet
+$Sheet
+S 3800 3000 1100 1000
+U 60144E24
+F0 "MCU" 59
+F1 "MCU.sch" 59
+F2 "SLCK" O R 4900 3300 59 
+F3 "MOSI" O R 4900 3400 59 
+F4 "MISO" I R 4900 3500 59 
+F5 "~SS" O R 4900 3600 59 
+F6 "CAN_TX" O L 3800 3400 59 
+F7 "CAN_RX" I L 3800 3600 59 
+$EndSheet
+$Sheet
+S 2400 3200 900  600 
+U 601450C1
+F0 "CAN tranciever" 59
+F1 "CAN tranciever.sch" 59
+F2 "CAN_H" B L 2400 3450 59 
+F3 "CAN_L" B L 2400 3550 59 
+F4 "CAN_TX" O R 3300 3400 59 
+F5 "CAN_RX" I R 3300 3600 59 
+$EndSheet
+Wire Wire Line
+	3300 3400 3800 3400
+Wire Wire Line
+	3300 3600 3800 3600
+$Sheet
+S 2400 4700 1000 800 
+U 60145B96
+F0 "PSU" 59
+F1 "PSU.sch" 59
+$EndSheet
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 60145E85
+P 1500 3450
+F 0 "J?" H 1100 3550 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1100 3450 50  0000 C CNN
+F 2 "" H 1500 3450 50  0001 C CNN
+F 3 "~" H 1500 3450 50  0001 C CNN
+	1    1500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 601485C2
+P 6850 5100
+F 0 "J?" H 6822 5028 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 6822 5073 50  0001 R CNN
+F 2 "" H 6850 5100 50  0001 C CNN
+F 3 "~" H 6850 5100 50  0001 C CNN
+	1    6850 5100
+	-1   0    0    1   
+$EndComp
+Text Notes 6850 4550 0    59   ~ 0
+Mounting for piggy pack tranciever
+Wire Wire Line
+	4900 3300 5300 3300
+Connection ~ 5300 3300
+Connection ~ 5200 3400
+Wire Wire Line
+	5200 3400 4900 3400
+Connection ~ 5100 3500
+Wire Wire Line
+	5100 3500 4900 3500
+Connection ~ 5000 3600
+Wire Wire Line
+	5000 3600 4900 3600
+$Comp
+L power:GND #PWR?
+U 1 1 6014B5F8
+P 6650 5400
+F 0 "#PWR?" H 6650 5150 50  0001 C CNN
+F 1 "GND" H 6655 5227 50  0000 C CNN
+F 2 "" H 6650 5400 50  0001 C CNN
+F 3 "" H 6650 5400 50  0001 C CNN
+	1    6650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6014B909
+P 6650 4700
+F 0 "#PWR?" H 6650 4550 50  0001 C CNN
+F 1 "+3.3V" H 6665 4873 50  0000 C CNN
+F 2 "" H 6650 4700 50  0001 C CNN
+F 3 "" H 6650 4700 50  0001 C CNN
+	1    6650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4700 6650 4800
+Wire Wire Line
+	6650 5300 6650 5400
+Wire Notes Line
+	6750 4600 8550 4600
+Wire Notes Line
+	8550 4600 8550 5500
+Wire Notes Line
+	8550 5500 6750 5500
+Wire Notes Line
+	6750 4600 6750 5500
+Wire Wire Line
+	8400 3500 9100 3500
+Wire Wire Line
+	5300 3300 5300 4900
+Wire Wire Line
+	5300 4900 6650 4900
+Wire Wire Line
+	5200 3400 5200 5000
+Wire Wire Line
+	5200 5000 6650 5000
+Wire Wire Line
+	5100 3500 5100 5100
+Wire Wire Line
+	5100 5100 6650 5100
+Wire Wire Line
+	5000 5200 6650 5200
+Wire Wire Line
+	5000 3600 5000 5200
+$Comp
+L power:+24V #PWR?
+U 1 1 6015CE4B
+P 2100 3150
+F 0 "#PWR?" H 2100 3000 50  0001 C CNN
+F 1 "+24V" H 2115 3323 50  0000 C CNN
+F 2 "" H 2100 3150 50  0001 C CNN
+F 3 "" H 2100 3150 50  0001 C CNN
+	1    2100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3650 2100 3750
+$Comp
+L power:GND #PWR?
+U 1 1 6015D658
+P 2100 3750
+F 0 "#PWR?" H 2100 3500 50  0001 C CNN
+F 1 "GND" H 2105 3577 50  0000 C CNN
+F 2 "" H 2100 3750 50  0001 C CNN
+F 3 "" H 2100 3750 50  0001 C CNN
+	1    2100 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 2500 4500 0    59   ~ 0
+24V->5V switching \n5V->3.3V linear
+Text Notes 3600 4700 0    59   ~ 0
+Debug/Status LEDs
+$Comp
+L power:GND #PWR?
+U 1 1 6016E9C7
+P 4600 5200
+F 0 "#PWR?" H 4600 4950 50  0001 C CNN
+F 1 "GND" H 4605 5027 50  0000 C CNN
+F 2 "" H 4600 5200 50  0001 C CNN
+F 3 "" H 4600 5200 50  0001 C CNN
+	1    4600 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 601771CD
+P 4500 4800
+F 0 "D?" V 4539 4683 50  0001 R CNN
+F 1 "LED" V 4448 4683 50  0001 R CNN
+F 2 "" H 4500 4800 50  0001 C CNN
+F 3 "~" H 4500 4800 50  0001 C CNN
+	1    4500 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 601777B4
+P 4700 4800
+F 0 "D?" V 4739 4683 50  0001 R CNN
+F 1 "LED" V 4648 4683 50  0001 R CNN
+F 2 "" H 4700 4800 50  0001 C CNN
+F 3 "~" H 4700 4800 50  0001 C CNN
+	1    4700 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60178366
+P 4500 4500
+F 0 "R?" H 4570 4546 50  0001 L CNN
+F 1 "R" H 4570 4455 50  0001 L CNN
+F 2 "" V 4430 4500 50  0001 C CNN
+F 3 "~" H 4500 4500 50  0001 C CNN
+	1    4500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601786A2
+P 4700 4500
+F 0 "R?" H 4770 4546 50  0001 L CNN
+F 1 "R" H 4770 4455 50  0001 L CNN
+F 2 "" V 4630 4500 50  0001 C CNN
+F 3 "~" H 4700 4500 50  0001 C CNN
+	1    4700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4950 4500 5050
+Wire Wire Line
+	4500 5050 4600 5050
+Wire Wire Line
+	4700 5050 4700 4950
+Wire Wire Line
+	4600 5050 4600 5200
+Connection ~ 4600 5050
+Wire Wire Line
+	4600 5050 4700 5050
+Wire Wire Line
+	4700 4350 4700 4000
+Wire Wire Line
+	4500 4000 4500 4350
+$Comp
+L Switch:SW_DPST_x2 SW?
+U 1 1 6018598A
+P 1900 3350
+F 0 "SW?" H 1900 3585 50  0001 C CNN
+F 1 "SW_DPST_x2" H 1900 3494 50  0001 C CNN
+F 2 "" H 1900 3350 50  0000 C CNN
+F 3 "~" H 1900 3350 50  0001 C CNN
+	1    1900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3150 2100 3350
+Wire Wire Line
+	2100 3650 1700 3650
+Wire Wire Line
+	1700 3450 2400 3450
+Wire Wire Line
+	1700 3550 2400 3550
+Text Notes 5050 3200 0    59   ~ 0
+Might use UART \nor I2C instead
+Wire Wire Line
+	7100 3500 7300 3500
+Wire Wire Line
+	5300 3300 6000 3300
+Wire Wire Line
+	5200 3400 6000 3400
+Wire Wire Line
+	5100 3500 6000 3500
+Wire Wire Line
+	5000 3600 6000 3600
+Wire Notes Line
+	5900 2650 5900 4250
+Wire Notes Line
+	5900 4250 8550 4250
+Wire Notes Line
+	8550 4250 8550 2650
+Wire Notes Line
+	5900 2650 8550 2650
+Text Notes 5900 2600 0    59   ~ 0
+RF front end\n
 $EndSCHEMATC
