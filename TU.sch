@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:TU-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -26,16 +27,6 @@ F 3 "~" H 9100 3100 50  0001 C CNN
 	1    9100 3100
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 6000 3000 1100 1000
-U 60144969
-F0 "tranciever" 59
-F1 "traciever.sch" 59
-F2 "SLCK" I L 6000 3300 59 
-F3 "MOSI" I L 6000 3400 59 
-F4 "MISO" O L 6000 3500 59 
-F5 "~SS" I L 6000 3600 59 
-$EndSheet
 $Sheet
 S 7300 3000 1100 1000
 U 60144AA2
@@ -107,7 +98,6 @@ Wire Wire Line
 Connection ~ 5100 3500
 Wire Wire Line
 	5100 3500 4900 3500
-Connection ~ 5000 3600
 Wire Wire Line
 	5000 3600 4900 3600
 $Comp
@@ -289,8 +279,6 @@ Wire Wire Line
 	5200 3400 6000 3400
 Wire Wire Line
 	5100 3500 6000 3500
-Wire Wire Line
-	5000 3600 6000 3600
 Wire Notes Line
 	5900 2650 5900 4250
 Wire Notes Line
@@ -299,6 +287,19 @@ Wire Notes Line
 	8550 4250 8550 2650
 Wire Notes Line
 	5900 2650 8550 2650
+$Sheet
+S 6000 3000 1100 1000
+U 60144374
+F0 "tranciever" 59
+F1 "tranciever.sch" 59
+F2 "SLCK" I L 6000 3300 59 
+F3 "MOSI" I L 6000 3400 59 
+F4 "MISO" O L 6000 3500 59 
+F5 "~SS" I L 6000 3600 59 
+$EndSheet
 Text Notes 5900 2600 0    59   ~ 0
 RF front end\n
+Connection ~ 5000 3600
+Wire Wire Line
+	5000 3600 6000 3600
 $EndSCHEMATC
