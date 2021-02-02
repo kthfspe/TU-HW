@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -25,5 +25,5 @@ MOSI
 Text HLabel 8300 3200 2    59   Input ~ 0
 MISO
 Text HLabel 8300 3300 2    59   Output ~ 0
-~SS
+~CS
 $EndSCHEMATC
