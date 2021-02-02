@@ -14,19 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	9100 3500 9100 3300
-$Comp
-L Device:Antenna AE1
-U 1 1 60144042
-P 9100 3100
-F 0 "AE1" H 9180 3089 50  0001 L CNN
-F 1 "Antenna" H 9180 3043 50  0000 L CNN
-F 2 "" H 9100 3100 50  0001 C CNN
-F 3 "~" H 9100 3100 50  0001 C CNN
-	1    9100 3100
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 3800 3000 1100 1000
 U 60144E24
@@ -230,8 +217,6 @@ Wire Wire Line
 	1700 3550 2400 3550
 Text Notes 5050 3200 0    59   ~ 0
 Might use UART \nor I2C instead
-Wire Wire Line
-	7100 3500 7300 3500
 Wire Notes Line
 	5900 2650 5900 4250
 Wire Notes Line
@@ -251,8 +236,13 @@ $EndSheet
 $Sheet
 S 7300 3000 1100 1000
 U 6014566F
-F0 "PA" 59
+F0 "CC1190" 59
 F1 "PA.sch" 59
+F2 "HGM" I L 7300 3250 39 
+F3 "LNA_EN" I L 7300 3350 39 
+F4 "PA_EN" I L 7300 3450 39 
+F5 "RFIO" B L 7300 3550 39 
+F6 "ANTENNA_OUT" O R 8400 3500 39 
 $EndSheet
 $Sheet
 S 2400 3150 900  650 
@@ -298,4 +288,28 @@ Wire Wire Line
 	5200 3500 5200 5100
 Wire Wire Line
 	5300 3400 5300 5000
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 60221CCA
+P 9300 3500
+F 0 "J3" H 9400 3475 50  0000 L CNN
+F 1 "Conn_Coaxial" H 9400 3384 50  0000 L CNN
+F 2 "" H 9300 3500 50  0001 C CNN
+F 3 " ~" H 9300 3500 50  0001 C CNN
+	1    9300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 60222AF8
+P 9300 3700
+F 0 "#PWR01" H 9300 3450 50  0001 C CNN
+F 1 "GND" H 9305 3527 50  0000 C CNN
+F 2 "" H 9300 3700 50  0001 C CNN
+F 3 "" H 9300 3700 50  0001 C CNN
+	1    9300 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 8850 3300 0    59   ~ 0
+SMA antenna connector
 $EndSCHEMATC
