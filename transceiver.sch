@@ -5106,4 +5106,8 @@ Wire Wire Line
 Connection ~ 8300 2200
 Wire Wire Line
 	8300 2200 8650 2200
+Text HLabel 5300 1800 0    59   Input ~ 0
+~RESET
+Wire Wire Line
+	5300 1800 5550 1800
 $EndSCHEMATC
