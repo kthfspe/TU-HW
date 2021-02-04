@@ -243,7 +243,7 @@ F 3 "~" H 3250 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 9550 3600 2    59   BiDi ~ 0
-RFIO
+CC1190_RFIO
 $Comp
 L power:GND #PWR013
 U 1 1 601F291A
