@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -112,8 +112,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 3100 5000 3200
 Connection ~ 5000 3200
-Text Notes 6000 3450 0    50   ~ 0
-By shorting pin 5 and 8 to GND all\nSN65HVD23* transcievers will work
 Text HLabel 4700 4600 0    50   Input ~ 0
 CAN_TX_2
 Text HLabel 4700 4700 0    50   Output ~ 0
@@ -214,6 +212,6 @@ Wire Wire Line
 Connection ~ 5000 4900
 Text Notes 6000 5150 0    50   ~ 0
 By shorting pin 5 and 8 to GND all\nSN65HVD23* transcievers will work
-Text Notes 5050 1900 0    59   ~ 0
-Use dual tranciever?\n
+Text Notes 4875 2000 0    59   ~ 0
+Could use dual-tranciever instead. \n+ easier routing\n- non-standard part
 $EndSCHEMATC

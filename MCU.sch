@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -14,13 +14,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6900 5750 2    59   Output ~ 0
+Text HLabel 5400 4250 2    59   Output ~ 0
 SLCK
-Text HLabel 6900 5850 2    59   Output ~ 0
+Text HLabel 5400 4350 2    59   Output ~ 0
 MOSI
-Text HLabel 6900 5950 2    59   Input ~ 0
+Text HLabel 5400 4450 2    59   Input ~ 0
 MISO
-Text HLabel 6900 6050 2    59   Output ~ 0
+Text HLabel 5400 4550 2    59   Output ~ 0
 ~CS
 $Comp
 L MCU_ST_STM32F7:STM32F769IITx U5
@@ -33,13 +33,13 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    3050 5550
 	1    0    0    -1  
 $EndComp
-Text HLabel 6900 4650 2    50   Input ~ 0
+Text HLabel 5400 3150 2    50   Input ~ 0
 CAN_TX_1
-Text HLabel 6900 4750 2    50   Output ~ 0
+Text HLabel 5400 3250 2    50   Output ~ 0
 CAN_RX_1
-Text HLabel 6900 4950 2    50   Input ~ 0
+Text HLabel 5400 3450 2    50   Input ~ 0
 CAN_TX_2
-Text HLabel 6900 5050 2    50   Output ~ 0
+Text HLabel 5400 3550 2    50   Output ~ 0
 CAN_RX_2
 $Comp
 L Device:C C33
@@ -694,7 +694,7 @@ F 3 "~" H 14650 7650 50  0001 C CNN
 	1    14650 7650
 	0    1    1    0   
 $EndComp
-Text Notes 6500 4550 0    59   ~ 0
+Text Notes 5000 3050 0    59   ~ 0
 USE CAN1/CAN2 and CAN3
 Wire Wire Line
 	2550 10050 2650 10050
@@ -837,16 +837,16 @@ Wire Notes Line
 	15550 850  9000 850 
 Wire Notes Line
 	9000 850  9000 3250
-Text Notes 6500 5650 0    59   ~ 0
+Text Notes 5000 4150 0    59   ~ 0
 USE SPI1,4,5,6 for 54 Mbps
 Text Label 5200 2750 2    59   ~ 0
 SWCLK
-Text Label 5200 2850 2    59   ~ 0
+Text Label 5525 2825 2    59   ~ 0
 SWDIO
 Wire Wire Line
 	4550 2750 5200 2750
 Wire Wire Line
-	4550 2850 5200 2850
+	4875 2825 5525 2825
 Text Notes 11950 6800 0    59   ~ 0
 Debug leds\n
 $Comp
@@ -980,16 +980,16 @@ Wire Notes Line
 	11950 9450 13400 9450
 Wire Notes Line
 	13400 9450 13400 6850
-Text HLabel 6900 6300 2    59   Output ~ 0
+Text HLabel 5400 4800 2    59   Output ~ 0
 HGM
-Text HLabel 6900 6400 2    59   Output ~ 0
+Text HLabel 5400 4900 2    59   Output ~ 0
 LNA_EN
-Text HLabel 6900 6500 2    59   Output ~ 0
+Text HLabel 5400 5000 2    59   Output ~ 0
 PA_EN
-Text HLabel 6900 6950 2    59   BiDi ~ 0
+Text HLabel 5400 5450 2    59   BiDi ~ 0
 RF_GPIO0
-Text HLabel 6900 6850 2    59   BiDi ~ 0
+Text HLabel 5400 5350 2    59   BiDi ~ 0
 RF_GPIO2
-Text HLabel 6900 6750 2    59   BiDi ~ 0
+Text HLabel 5400 5250 2    59   BiDi ~ 0
 RF_GPIO3
 $EndSCHEMATC

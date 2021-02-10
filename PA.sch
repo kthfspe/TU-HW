@@ -14,31 +14,18 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 550  750  0    59   ~ 0
-Reference design by TI:\nhttps://www.ti.com/lit/df/tidr235/tidr235.pdf?ts=1612292840663&ref_url=https%253A%252F%252Fwww.google.com%252F
-$Comp
-L Device:RF_Shield_One_Piece J6
-U 1 1 602F38D4
-P 2100 6600
-F 0 "J6" H 2050 7150 50  0000 L CNN
-F 1 "RF_Shield_One_Piece" H 1700 7050 50  0000 L CNN
-F 2 "" H 2100 6500 50  0001 C CNN
-F 3 "~" H 2100 6500 50  0001 C CNN
-	1    2100 6600
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR059
 U 1 1 602F428E
-P 2100 7000
-F 0 "#PWR059" H 2100 6750 50  0001 C CNN
-F 1 "GND" H 2105 6827 50  0000 C CNN
-F 2 "" H 2100 7000 50  0001 C CNN
-F 3 "" H 2100 7000 50  0001 C CNN
-	1    2100 7000
+P 3750 6950
+F 0 "#PWR059" H 3750 6700 50  0001 C CNN
+F 1 "GND" H 3755 6777 50  0000 C CNN
+F 2 "" H 3750 6950 50  0001 C CNN
+F 3 "" H 3750 6950 50  0001 C CNN
+	1    3750 6950
 	1    0    0    -1  
 $EndComp
-Text Notes 8450 2850 0    39   ~ 0
+Text Notes 8450 2875 0    59   ~ 0
 SAW filter may not be neccecairy. \nExact component not decided yet.
 $Comp
 L power:+3.3V #PWR058
@@ -51,8 +38,8 @@ F 3 "" H 3800 1650 50  0001 C CNN
 	1    3800 1650
 	1    0    0    -1  
 $EndComp
-Text Notes 9300 4000 0    39   ~ 0
-SAW filter is used to pass regulation by\ndecreasing phasenoise at the band edges.\nIf not used output power has to be reduced.
+Text Notes 8425 4625 0    59   ~ 0
+SAW filter is used to pass regulation by\ndecreasing phasenoise at the band edges.\nIf not used output power may have to be reduced.
 Connection ~ 9450 3600
 Wire Wire Line
 	9450 3600 9550 3600
@@ -80,8 +67,6 @@ F 3 "~" H 8950 3150 50  0001 C CNN
 	1    8950 3150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5350 3850 6200 3850
 Wire Wire Line
 	5350 3050 5350 3250
 Wire Wire Line
@@ -268,16 +253,12 @@ F 3 "~" H 7850 3300 50  0001 C CNN
 	1    7850 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 3150 6150 3150
-Text HLabel 5500 1600 0    59   Input ~ 0
+Text HLabel 5450 1600 0    59   Input ~ 0
 PA_EN
-Text HLabel 5500 1500 0    59   Input ~ 0
+Text HLabel 5450 1500 0    59   Input ~ 0
 LNA_EN
-Text HLabel 5500 1400 0    59   Input ~ 0
+Text HLabel 5450 1400 0    59   Input ~ 0
 HGM
-Wire Wire Line
-	5850 3450 5850 4200
 Wire Wire Line
 	5200 3650 6200 3650
 Connection ~ 5200 3650
@@ -564,58 +545,54 @@ Wire Wire Line
 $Comp
 L Device:R R14
 U 1 1 601E98C3
-P 5650 2350
-F 0 "R14" H 5720 2396 50  0000 L CNN
-F 1 "10k" H 5720 2305 50  0000 L CNN
-F 2 "" V 5580 2350 50  0001 C CNN
-F 3 "~" H 5650 2350 50  0001 C CNN
-	1    5650 2350
+P 5600 2350
+F 0 "R14" H 5670 2396 50  0000 L CNN
+F 1 "10k" H 5670 2305 50  0000 L CNN
+F 2 "" V 5530 2350 50  0001 C CNN
+F 3 "~" H 5600 2350 50  0001 C CNN
+	1    5600 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R15
 U 1 1 601EB9A5
-P 5900 2350
-F 0 "R15" H 5970 2396 50  0000 L CNN
-F 1 "10k" H 5970 2305 50  0000 L CNN
-F 2 "" V 5830 2350 50  0001 C CNN
-F 3 "~" H 5900 2350 50  0001 C CNN
-	1    5900 2350
+P 5850 2350
+F 0 "R15" H 5920 2396 50  0000 L CNN
+F 1 "10k" H 5920 2305 50  0000 L CNN
+F 2 "" V 5780 2350 50  0001 C CNN
+F 3 "~" H 5850 2350 50  0001 C CNN
+	1    5850 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R16
 U 1 1 601EFB2B
-P 6150 2350
-F 0 "R16" H 6220 2396 50  0000 L CNN
-F 1 "10k" H 6220 2305 50  0000 L CNN
-F 2 "" V 6080 2350 50  0001 C CNN
-F 3 "~" H 6150 2350 50  0001 C CNN
-	1    6150 2350
+P 6100 2350
+F 0 "R16" H 6170 2396 50  0000 L CNN
+F 1 "10k" H 6170 2305 50  0000 L CNN
+F 2 "" V 6030 2350 50  0001 C CNN
+F 3 "~" H 6100 2350 50  0001 C CNN
+	1    6100 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 1400 5650 1400
+	5450 1400 5600 1400
 Wire Wire Line
-	5650 1400 5650 2200
+	5600 1400 5600 2200
 Wire Wire Line
-	5500 1500 5900 1500
+	5450 1500 5850 1500
 Wire Wire Line
-	5900 1500 5900 2200
+	5850 1500 5850 2200
 Wire Wire Line
-	5500 1600 6150 1600
+	5450 1600 6100 1600
 Wire Wire Line
-	6150 1600 6150 2200
+	6100 1600 6100 2200
 Wire Wire Line
-	5650 2500 5650 2850
+	5600 2500 5600 2850
 Wire Wire Line
-	5650 2850 6200 2850
+	5850 2500 5850 2950
 Wire Wire Line
-	5900 2950 6200 2950
-Wire Wire Line
-	5900 2500 5900 2950
-Wire Wire Line
-	6150 2500 6150 3150
+	6100 2500 6100 3150
 $Comp
 L Device:C C16
 U 1 1 60207F7D
@@ -721,4 +698,27 @@ Wire Wire Line
 	2550 3050 2850 3050
 Wire Wire Line
 	3650 3050 4100 3050
+Wire Wire Line
+	5600 2850 6200 2850
+Wire Wire Line
+	5850 2950 6200 2950
+Wire Wire Line
+	6100 3150 6200 3150
+Wire Wire Line
+	5850 3450 5850 4200
+Wire Wire Line
+	5350 3850 6200 3850
+$Comp
+L Device:RF_Shield_One_Piece J6
+U 1 1 602F38D4
+P 3750 6550
+F 0 "J6" H 3700 7100 50  0000 L CNN
+F 1 "RF_Shield_One_Piece" H 3350 7000 50  0000 L CNN
+F 2 "" H 3750 6450 50  0001 C CNN
+F 3 "~" H 3750 6450 50  0001 C CNN
+	1    3750 6550
+	1    0    0    -1  
+$EndComp
+Text Notes 2925 5850 0    59   ~ 0
+Shield for PA might not be neccecairy
 $EndSCHEMATC
