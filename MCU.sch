@@ -14,13 +14,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5400 4250 2    59   Output ~ 0
+Text HLabel 4950 1950 2    59   Output ~ 0
 SLCK
-Text HLabel 5400 4350 2    59   Output ~ 0
+Text HLabel 4950 2150 2    59   Output ~ 0
 MOSI
-Text HLabel 5400 4450 2    59   Input ~ 0
+Text HLabel 4950 2050 2    59   Input ~ 0
 MISO
-Text HLabel 5400 4550 2    59   Output ~ 0
+Text HLabel 4950 1850 2    59   Output ~ 0
 ~CS
 $Comp
 L MCU_ST_STM32F7:STM32F769IITx U5
@@ -33,13 +33,13 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    3050 5550
 	1    0    0    -1  
 $EndComp
-Text HLabel 5400 3150 2    50   Input ~ 0
+Text HLabel 4950 3950 2    50   Input ~ 0
 CAN_TX_1
-Text HLabel 5400 3250 2    50   Output ~ 0
+Text HLabel 4950 4050 2    50   Output ~ 0
 CAN_RX_1
-Text HLabel 5400 3450 2    50   Input ~ 0
+Text HLabel 4950 3550 2    50   Input ~ 0
 CAN_TX_2
-Text HLabel 5400 3550 2    50   Output ~ 0
+Text HLabel 4950 3450 2    50   Output ~ 0
 CAN_RX_2
 $Comp
 L Device:C C33
@@ -694,8 +694,6 @@ F 3 "~" H 14650 7650 50  0001 C CNN
 	1    14650 7650
 	0    1    1    0   
 $EndComp
-Text Notes 5000 3050 0    59   ~ 0
-USE CAN1/CAN2 and CAN3
 Wire Wire Line
 	2550 10050 2650 10050
 Wire Wire Line
@@ -837,16 +835,8 @@ Wire Notes Line
 	15550 850  9000 850 
 Wire Notes Line
 	9000 850  9000 3250
-Text Notes 5000 4150 0    59   ~ 0
-USE SPI1,4,5,6 for 54 Mbps
-Text Label 5200 2750 2    59   ~ 0
+Text Label 5700 2750 2    59   ~ 0
 SWCLK
-Text Label 5525 2825 2    59   ~ 0
-SWDIO
-Wire Wire Line
-	4550 2750 5200 2750
-Wire Wire Line
-	4875 2825 5525 2825
 Text Notes 11950 6800 0    59   ~ 0
 Debug leds\n
 $Comp
@@ -980,16 +970,137 @@ Wire Notes Line
 	11950 9450 13400 9450
 Wire Notes Line
 	13400 9450 13400 6850
-Text HLabel 5400 4800 2    59   Output ~ 0
+Text HLabel 4950 4850 2    59   Output ~ 0
 HGM
-Text HLabel 5400 4900 2    59   Output ~ 0
+Text HLabel 4950 4950 2    59   Output ~ 0
 LNA_EN
-Text HLabel 5400 5000 2    59   Output ~ 0
+Text HLabel 4950 5050 2    59   Output ~ 0
 PA_EN
-Text HLabel 5400 5450 2    59   BiDi ~ 0
+Text HLabel 4950 5350 2    59   BiDi ~ 0
 RF_GPIO0
-Text HLabel 5400 5350 2    59   BiDi ~ 0
+Text HLabel 4950 5250 2    59   BiDi ~ 0
 RF_GPIO2
-Text HLabel 5400 5250 2    59   BiDi ~ 0
+Text HLabel 4950 5150 2    59   BiDi ~ 0
 RF_GPIO3
+Text Label 5700 2850 2    59   ~ 0
+SWDIO
+Wire Wire Line
+	4950 1850 4550 1850
+Wire Wire Line
+	4550 1950 4950 1950
+Wire Wire Line
+	4550 2050 4950 2050
+Wire Wire Line
+	4550 2150 4950 2150
+Wire Wire Line
+	4550 3950 4950 3950
+Wire Wire Line
+	4550 4050 4950 4050
+Wire Wire Line
+	4550 2750 5700 2750
+Wire Wire Line
+	4550 2850 5700 2850
+Wire Wire Line
+	4550 3450 4950 3450
+Wire Wire Line
+	4550 3550 4950 3550
+Text Notes 5450 4000 0    59   ~ 0
+CAN1
+Text Notes 5450 3600 0    59   ~ 0
+CAN3\n\n
+Text Notes 5400 1850 0    59   ~ 0
+SPI1
+Wire Wire Line
+	4550 4850 4950 4850
+Wire Wire Line
+	4550 4950 4950 4950
+Wire Wire Line
+	4550 5050 4950 5050
+Wire Wire Line
+	4550 5150 4950 5150
+Wire Wire Line
+	4550 5250 4950 5250
+Wire Wire Line
+	4550 5350 4950 5350
+Text Label 5700 5650 2    59   ~ 0
+LED_1
+Text Label 5700 5750 2    59   ~ 0
+LED_2
+Text Label 5700 5850 2    59   ~ 0
+LED_3
+Wire Wire Line
+	4550 5650 5700 5650
+Wire Wire Line
+	4550 5750 5700 5750
+Wire Wire Line
+	4550 5850 5700 5850
+Text Label 1250 1450 2    59   ~ 0
+NRST
+Text Label 1250 1550 2    59   ~ 0
+BYPASS_REG
+Text Label 1250 1850 2    59   ~ 0
+BOOT0
+Text Label 1250 1650 2    59   ~ 0
+PDR_ON
+Text Label 1250 2050 2    59   ~ 0
+CAP_DSI
+Text Label 1250 2150 2    59   ~ 0
+CAP_1
+Text Label 1250 2250 2    59   ~ 0
+CAP_2
+Wire Wire Line
+	700  2350 700  2175
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60304CA3
+P 700 2175
+F 0 "#PWR?" H 700 2025 50  0001 C CNN
+F 1 "+3.3V" H 715 2348 50  0000 C CNN
+F 2 "" H 700 2175 50  0001 C CNN
+F 3 "" H 700 2175 50  0001 C CNN
+	1    700  2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  2350 1450 2350
+Wire Wire Line
+	1250 1450 1450 1450
+Wire Wire Line
+	1250 1550 1450 1550
+Wire Wire Line
+	1250 1650 1450 1650
+Wire Wire Line
+	1250 1850 1450 1850
+Wire Wire Line
+	1450 2050 1250 2050
+Wire Wire Line
+	1450 2150 1250 2150
+Wire Wire Line
+	1450 2250 1250 2250
+$Comp
+L Device:C C?
+U 1 1 6034349C
+P 4825 1300
+F 0 "C?" H 4940 1346 50  0000 L CNN
+F 1 "C" H 4940 1255 50  0000 L CNN
+F 2 "" H 4863 1150 50  0001 C CNN
+F 3 "~" H 4825 1300 50  0001 C CNN
+	1    4825 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603444EA
+P 4825 1450
+F 0 "#PWR?" H 4825 1200 50  0001 C CNN
+F 1 "GND" H 4830 1277 50  0000 C CNN
+F 2 "" H 4825 1450 50  0001 C CNN
+F 3 "" H 4825 1450 50  0001 C CNN
+	1    4825 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1150 4825 1150
+Text Label 4825 1150 2    59   ~ 0
+CAP_DSI
 $EndSCHEMATC
