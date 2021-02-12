@@ -62,7 +62,7 @@ U 1 1 5EEB3AF7
 P 5750 2550
 F 0 "C6" V 5498 2550 50  0000 C CNN
 F 1 "100n" V 5589 2550 50  0000 C CNN
-F 2 "" H 5788 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 2400 50  0001 C CNN
 F 3 "~" H 5750 2550 50  0001 C CNN
 	1    5750 2550
 	0    1    1    0   
@@ -160,7 +160,7 @@ U 1 1 6020E644
 P 5750 4250
 F 0 "C55" V 5498 4250 50  0000 C CNN
 F 1 "100n" V 5589 4250 50  0000 C CNN
-F 2 "" H 5788 4100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 4100 50  0001 C CNN
 F 3 "~" H 5750 4250 50  0001 C CNN
 	1    5750 4250
 	0    1    1    0   
@@ -214,4 +214,6 @@ Text Notes 6000 5150 0    50   ~ 0
 By shorting pin 5 and 8 to GND all\nSN65HVD23* transcievers will work
 Text Notes 4875 2000 0    59   ~ 0
 Could use dual-tranciever instead. \n+ easier routing\n- non-standard part
+Text Notes 6450 4225 0    59   ~ 0
+Mount only one tranciever on reciever-side\n
 $EndSCHEMATC
