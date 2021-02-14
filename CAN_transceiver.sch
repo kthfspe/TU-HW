@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -22,14 +22,6 @@ Wire Wire Line
 	4700 2900 5100 2900
 Wire Wire Line
 	5100 3000 4700 3000
-Text HLabel 6350 3000 2    50   BiDi ~ 0
-CANH_1
-Text HLabel 6350 3100 2    50   BiDi ~ 0
-CANL_1
-Wire Wire Line
-	5900 3000 6350 3000
-Wire Wire Line
-	6350 3100 5900 3100
 Wire Wire Line
 	5500 2700 5500 2550
 $Comp
@@ -120,14 +112,10 @@ Wire Wire Line
 	4700 4600 5100 4600
 Wire Wire Line
 	5100 4700 4700 4700
-Text HLabel 6350 4700 2    50   BiDi ~ 0
+Text HLabel 6225 4600 2    50   BiDi ~ 0
 CANH_2
-Text HLabel 6350 4800 2    50   BiDi ~ 0
+Text HLabel 6225 4900 2    50   BiDi ~ 0
 CANL_2
-Wire Wire Line
-	5900 4700 6350 4700
-Wire Wire Line
-	6350 4800 5900 4800
 Wire Wire Line
 	5500 4400 5500 4250
 $Comp
@@ -216,4 +204,61 @@ Text Notes 4875 2000 0    59   ~ 0
 Could use dual-tranciever instead. \n+ easier routing\n- non-standard part
 Text Notes 6450 4225 0    59   ~ 0
 Mount only one tranciever on reciever-side\n
+$Comp
+L Device:R R10
+U 1 1 6036CCE6
+P 6100 3050
+F 0 "R10" H 6170 3096 50  0000 L CNN
+F 1 "120" H 6170 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 3050 50  0001 C CNN
+F 3 "~" H 6100 3050 50  0001 C CNN
+	1    6100 3050
+	1    0    0    -1  
+$EndComp
+Text HLabel 6225 2900 2    50   BiDi ~ 0
+CANH_1
+Text HLabel 6225 3200 2    50   BiDi ~ 0
+CANL_1
+Wire Wire Line
+	6100 2900 6225 2900
+Wire Wire Line
+	6100 3200 6225 3200
+Wire Wire Line
+	5900 3000 5900 2900
+Wire Wire Line
+	5900 2900 6100 2900
+Connection ~ 6100 2900
+Wire Wire Line
+	5900 3100 5900 3200
+Wire Wire Line
+	5900 3200 6100 3200
+Connection ~ 6100 3200
+$Comp
+L Device:R R17
+U 1 1 60371FDB
+P 6100 4750
+F 0 "R17" H 6170 4796 50  0000 L CNN
+F 1 "120" H 6170 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 4750 50  0001 C CNN
+F 3 "~" H 6100 4750 50  0001 C CNN
+	1    6100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4600 6225 4600
+Wire Wire Line
+	6100 4900 6225 4900
+Wire Wire Line
+	5900 4600 6100 4600
+Connection ~ 6100 4600
+Wire Wire Line
+	5900 4900 6100 4900
+Connection ~ 6100 4900
+Wire Wire Line
+	5900 4600 5900 4700
+Wire Wire Line
+	5875 4800 5900 4800
+Wire Wire Line
+	5900 4800 5900 4900
+Connection ~ 5900 4800
 $EndSCHEMATC

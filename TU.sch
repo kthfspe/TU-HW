@@ -19,18 +19,8 @@ S 1800 5075 900  800
 U 60145B96
 F0 "PSU" 59
 F1 "PSU.sch" 59
+F2 "battery_in" I L 1800 5475 59 
 $EndSheet
-$Comp
-L power:+24V #PWR0103
-U 1 1 6015CE4B
-P 1800 1900
-F 0 "#PWR0103" H 1800 1750 50  0001 C CNN
-F 1 "+24V" H 1815 2073 50  0000 C CNN
-F 2 "" H 1800 1900 50  0001 C CNN
-F 3 "" H 1800 1900 50  0001 C CNN
-	1    1800 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 2600 1800 2700
 $Comp
@@ -60,7 +50,7 @@ U 1 1 60221CCA
 P 9700 2450
 F 0 "J3" H 9800 2425 50  0000 L CNN
 F 1 "Conn_Coaxial" H 9800 2334 50  0000 L CNN
-F 2 "" H 9700 2450 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical" H 9700 2450 50  0001 C CNN
 F 3 " ~" H 9700 2450 50  0001 C CNN
 	1    9700 2450
 	1    0    0    -1  
@@ -84,22 +74,9 @@ U 1 1 602153AD
 P 1200 2300
 F 0 "J1" H 1308 2681 50  0000 C CNN
 F 1 "Conn_01x06_Male" H 1308 2590 50  0000 C CNN
-F 2 "" H 1200 2300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1200 2300 50  0001 C CNN
 F 3 "~" H 1200 2300 50  0001 C CNN
 	1    1200 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 1900 1800 2100
-$Comp
-L Switch:SW_DPST_x2 SW1
-U 1 1 6018598A
-P 1600 2100
-F 0 "SW1" H 1600 2335 50  0001 C CNN
-F 1 "SW_DPST_x2" H 1600 2244 50  0001 C CNN
-F 2 "" H 1600 2100 50  0001 C CNN
-F 3 "~" H 1600 2100 50  0001 C CNN
-	1    1600 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -202,7 +179,7 @@ U 1 1 601D2CAA
 P 9700 4950
 F 0 "J7" H 9800 4925 50  0000 L CNN
 F 1 "Conn_Coaxial" H 9800 4834 50  0000 L CNN
-F 2 "" H 9700 4950 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical" H 9700 4950 50  0001 C CNN
 F 3 " ~" H 9700 4950 50  0001 C CNN
 	1    9700 4950
 	1    0    0    -1  
@@ -313,7 +290,7 @@ U 1 1 601B9707
 P 4900 5550
 F 0 "J4" H 4875 5950 50  0000 C CNN
 F 1 "Debugger connector" H 4875 5875 50  0000 C CNN
-F 2 "" H 4900 5550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 4900 5550 50  0001 C CNN
 F 3 "~" H 4900 5550 50  0001 C CNN
 	1    4900 5550
 	1    0    0    -1  
@@ -350,7 +327,7 @@ U 1 1 601CB0A0
 P 7750 4150
 F 0 "J2" V 7585 4128 50  0000 C CNN
 F 1 "Conn_01x17_Male" V 7676 4128 50  0000 C CNN
-F 2 "" H 7750 4150 50  0001 C CNN
+F 2 "KTHFS:RFM95PW" H 7750 4150 50  0001 C CNN
 F 3 "~" H 7750 4150 50  0001 C CNN
 	1    7750 4150
 	0    -1   1    0   
@@ -441,4 +418,12 @@ Wire Wire Line
 Wire Wire Line
 	5300 2450 4800 2450
 Connection ~ 5300 4850
+Text Label 2100 2100 2    59   ~ 0
+battery_in
+Wire Wire Line
+	1400 2100 2100 2100
+Text Label 1100 5475 0    59   ~ 0
+battery_in
+Wire Wire Line
+	1800 5475 1100 5475
 $EndSCHEMATC

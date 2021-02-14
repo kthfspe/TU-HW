@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name CC1190RGVR)(type Legacy)(uri "C:/Users/Simon Richter/Downloads/CC1190RGVR/CC1190RGVR.lib")(options "")(descr ""))
+  (lib (name B39871B3725U410)(type Legacy)(uri "${KIPRJMOD}/component lib/B39871B3725U410.lib")(options "")(descr ""))
+  (lib (name TU-rescue)(type Legacy)(uri ${KIPRJMOD}/TU-rescue.lib)(options "")(descr ""))
 )

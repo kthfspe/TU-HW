@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SAFFB1G58KA0F0A
+D Murata 1575.42/1602MHz SAW filter, SMD 1109
+K SAW filter
+F https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en
+$ENDCMP
+#
+$CMP SAFFB1G96FN0F0A
+D Murata 1960MHz SAW filter, SMD 1109
+K SAW filter
+F https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en
+$ENDCMP
+#
+$CMP SAFFB2G14FA0F0A
+D Murata 2140MHz SAW filter, SMD 1109
+K SAW filter
+F https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en
+$ENDCMP
+#
+$CMP SAFFB881MFL0F0A
+D Murata 881.5MHz SAW filter, SMD 1109
+K SAW filter
+F https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en
+$ENDCMP
+#
+$CMP SAFFB942MFM0F0A
+D Murata 942.5MHz SAW filter, SMD 1109
+K SAW filter
+F https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en
+$ENDCMP
+#
+$CMP SAW_RF_filterB3725
+D 1582.47MHz SAW filter, SMD 1109
+K SAW filter
+F https://product.tdk.com/search-template/en/documents/data_sheet/40/ds/mc/B9482.pdf
+$ENDCMP
+#
+#End Doc Library
