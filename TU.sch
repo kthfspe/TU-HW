@@ -44,29 +44,7 @@ Wire Notes Line
 	6100 1550 8750 1550
 Text Notes 6100 1500 0    59   ~ 0
 RF front end\n
-$Comp
-L Connector:Conn_Coaxial J3
-U 1 1 60221CCA
-P 9700 2450
-F 0 "J3" H 9800 2425 50  0000 L CNN
-F 1 "Conn_Coaxial" H 9800 2334 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical" H 9700 2450 50  0001 C CNN
-F 3 " ~" H 9700 2450 50  0001 C CNN
-	1    9700 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 60222AF8
-P 9700 2700
-F 0 "#PWR01" H 9700 2450 50  0001 C CNN
-F 1 "GND" H 9705 2527 50  0000 C CNN
-F 2 "" H 9700 2700 50  0001 C CNN
-F 3 "" H 9700 2700 50  0001 C CNN
-	1    9700 2700
-	1    0    0    -1  
-$EndComp
-Text Notes 9300 2250 0    59   ~ 0
+Text Notes 9475 1750 0    59   ~ 0
 SMA antenna connector
 $Comp
 L Connector:Conn_01x06_Male J1
@@ -103,17 +81,6 @@ F5 "ANTENNA_OUT" O R 8600 2450 59
 F6 "CC1190_RFIO" B L 7500 2200 59 
 $EndSheet
 Wire Wire Line
-	5600 2000 6200 2000
-Connection ~ 5600 2000
-Wire Wire Line
-	5500 2100 6200 2100
-Connection ~ 5500 2100
-Wire Wire Line
-	5400 2200 6200 2200
-Connection ~ 5400 2200
-Wire Wire Line
-	5200 2400 6200 2400
-Wire Wire Line
 	3450 2200 3700 2200
 Wire Wire Line
 	3450 2300 3700 2300
@@ -122,15 +89,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 2550 3700 2550
 Wire Wire Line
-	4800 2000 5600 2000
-Wire Wire Line
-	4800 2100 5500 2100
-Wire Wire Line
-	4800 2200 5400 2200
-Wire Wire Line
-	4800 2550 6200 2550
-Wire Wire Line
-	4800 2650 6200 2650
+	4800 2550 5875 2550
 Wire Wire Line
 	4800 2750 6200 2750
 Wire Wire Line
@@ -143,8 +102,6 @@ Wire Wire Line
 	7150 2200 7500 2200
 Wire Wire Line
 	8600 2450 9500 2450
-Wire Wire Line
-	9700 2700 9700 2650
 $Sheet
 S 6200 1900 950  950 
 U 60145F44
@@ -160,93 +117,23 @@ F8 "GPIO2" B L 6200 2650 59
 F9 "GPIO3" B L 6200 2750 59 
 F10 "CC1200_RFIO" B R 7150 2200 59 
 $EndSheet
-Wire Wire Line
-	9700 5200 9700 5150
 $Comp
 L power:GND #PWR074
 U 1 1 601D2CB0
-P 9700 5200
-F 0 "#PWR074" H 9700 4950 50  0001 C CNN
-F 1 "GND" H 9705 5027 50  0000 C CNN
-F 2 "" H 9700 5200 50  0001 C CNN
-F 3 "" H 9700 5200 50  0001 C CNN
-	1    9700 5200
+P 9950 3925
+F 0 "#PWR074" H 9950 3675 50  0001 C CNN
+F 1 "GND" H 9955 3752 50  0000 C CNN
+F 2 "" H 9950 3925 50  0001 C CNN
+F 3 "" H 9950 3925 50  0001 C CNN
+	1    9950 3925
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_Coaxial J7
-U 1 1 601D2CAA
-P 9700 4950
-F 0 "J7" H 9800 4925 50  0000 L CNN
-F 1 "Conn_Coaxial" H 9800 4834 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical" H 9700 4950 50  0001 C CNN
-F 3 " ~" H 9700 4950 50  0001 C CNN
-	1    9700 4950
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	6600 5100 8750 5100
-Wire Notes Line
-	8750 3850 6600 3850
-NoConn ~ 8250 4350
-NoConn ~ 8350 4350
-NoConn ~ 7650 4350
-$Comp
-L power:GND #PWR073
-U 1 1 602650C2
-P 8450 5200
-F 0 "#PWR073" H 8450 4950 50  0001 C CNN
-F 1 "GND" H 8455 5027 50  0000 C CNN
-F 2 "" H 8450 5200 50  0001 C CNN
-F 3 "" H 8450 5200 50  0001 C CNN
-	1    8450 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 4350 8450 4400
-Wire Wire Line
-	8450 4400 8550 4400
-$Comp
-L power:GND #PWR072
-U 1 1 60260077
-P 7050 5200
-F 0 "#PWR072" H 7050 4950 50  0001 C CNN
-F 1 "GND" H 7055 5027 50  0000 C CNN
-F 2 "" H 7050 5200 50  0001 C CNN
-F 3 "" H 7050 5200 50  0001 C CNN
-	1    7050 5200
-	1    0    0    -1  
-$EndComp
-Text Notes 6600 3800 0    59   ~ 0
-Piggyback backup rf module
-Wire Notes Line
-	8750 5100 8750 3850
-Wire Wire Line
-	5200 2400 5200 4850
-Wire Wire Line
-	4400 5650 4700 5650
 Wire Wire Line
 	4150 5750 4700 5750
-Wire Wire Line
-	4500 5550 4700 5550
 Wire Wire Line
 	4300 5350 4700 5350
 Wire Wire Line
 	4300 5800 4300 5350
-Wire Wire Line
-	4400 4850 4400 5650
-Wire Wire Line
-	4400 4850 5200 4850
-Wire Wire Line
-	4500 4950 5300 4950
-Wire Wire Line
-	4500 5550 4500 4950
-Wire Wire Line
-	5200 5750 5400 5750
-Wire Wire Line
-	5200 5650 5500 5650
-Wire Wire Line
-	5200 5550 5600 5550
 $Comp
 L power:GND #PWR032
 U 1 1 601BC4BC
@@ -271,8 +158,6 @@ F 3 "" H 4150 5650 50  0001 C CNN
 	1    4150 5650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5200 5450
-NoConn ~ 4700 5450
 $Comp
 L power:+3.3V #PWR033
 U 1 1 601BC0E6
@@ -296,82 +181,16 @@ F 3 "~" H 4900 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR069
-U 1 1 60273B55
-P 6750 4150
-F 0 "#PWR069" H 6750 4000 50  0001 C CNN
-F 1 "+5V" H 6765 4323 50  0000 C CNN
-F 2 "" H 6750 4150 50  0001 C CNN
-F 3 "" H 6750 4150 50  0001 C CNN
-	1    6750 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 5650 5500 4650
-Wire Wire Line
-	5500 2100 5500 4650
-Connection ~ 5500 4650
-NoConn ~ 7550 4350
-NoConn ~ 7450 4350
-Wire Wire Line
-	6950 4950 9500 4950
-Wire Wire Line
-	5600 5550 5600 4550
-Wire Wire Line
-	5600 2000 5600 4550
-Connection ~ 5600 4550
-NoConn ~ 7750 4350
-$Comp
 L Connector:Conn_01x17_Male J2
 U 1 1 601CB0A0
-P 7750 4150
-F 0 "J2" V 7585 4128 50  0000 C CNN
-F 1 "Conn_01x17_Male" V 7676 4128 50  0000 C CNN
-F 2 "KTHFS:RFM95PW" H 7750 4150 50  0001 C CNN
-F 3 "~" H 7750 4150 50  0001 C CNN
-	1    7750 4150
-	0    -1   1    0   
+P 9250 4750
+F 0 "J2" V 9085 4728 50  0000 C CNN
+F 1 "Conn_01x17_Male" V 9176 4728 50  0000 C CNN
+F 2 "KTHFS:RFM95PW" H 9250 4750 50  0001 C CNN
+F 3 "~" H 9250 4750 50  0001 C CNN
+	1    9250 4750
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 4550 8050 4550
-NoConn ~ 7150 4350
-NoConn ~ 7250 4350
-Wire Wire Line
-	7350 4450 6750 4450
-Wire Wire Line
-	5300 4950 5300 4850
-Wire Notes Line
-	6600 3850 6600 5100
-Wire Wire Line
-	5400 5750 5400 4750
-Wire Wire Line
-	5400 2200 5400 4750
-Connection ~ 5400 4750
-Wire Wire Line
-	5400 4750 7850 4750
-Wire Wire Line
-	5500 4650 7950 4650
-Wire Wire Line
-	5300 4850 8150 4850
-Wire Wire Line
-	6750 4150 6750 4450
-Connection ~ 8450 4400
-Wire Wire Line
-	8450 4400 8450 5200
-Wire Wire Line
-	8150 4350 8150 4850
-Wire Wire Line
-	8050 4350 8050 4550
-Wire Wire Line
-	7850 4350 7850 4750
-Wire Wire Line
-	7950 4350 7950 4650
-Wire Wire Line
-	7350 4350 7350 4450
-Wire Wire Line
-	6950 4350 6950 4950
-Wire Wire Line
-	7050 4350 7050 5200
 Wire Wire Line
 	5275 5350 5275 5250
 Wire Wire Line
@@ -391,7 +210,7 @@ F8 "CANH_2" B L 2350 2400 59
 F9 "CANL_2" B L 2350 2500 59 
 $EndSheet
 $Sheet
-S 3700 1900 1100 1400
+S 3700 1900 1100 2925
 U 60144E24
 F0 "MCU" 59
 F1 "MCU.sch" 59
@@ -408,16 +227,20 @@ F11 "PA_EN" O R 4800 3200 59
 F12 "RF_GPIO0" B R 4800 2550 59 
 F13 "RF_GPIO2" B R 4800 2650 59 
 F14 "RF_GPIO3" B R 4800 2750 59 
-F15 "~CS_2" O R 4800 2450 59 
-F16 "~CS_1" O R 4800 2300 59 
+F15 "~CS_1" O R 4800 2300 59 
+F16 "RF2_DIO0" B R 4800 3875 59 
+F17 "RF2_DIO1" B R 4800 3975 59 
+F18 "RF2_DIO2" B R 4800 4075 59 
+F19 "RF2_DIO3" B R 4800 4175 59 
+F20 "RF2_DIO4" B R 4800 4275 59 
+F21 "RF2_DIO5" B R 4800 4375 59 
+F22 "~CS_2" O R 4800 3775 59 
+F23 "RESET_RF2" O R 4800 3650 59 
+F24 "~RESET" O R 4800 2400 59 
+F25 "SLCK_RF2" O R 4800 4475 59 
+F26 "MOSI_RF2" O R 4800 4575 59 
+F27 "MISO_RF2" I R 4800 4675 59 
 $EndSheet
-Wire Wire Line
-	4800 2300 6200 2300
-Wire Wire Line
-	5300 4850 5300 2450
-Wire Wire Line
-	5300 2450 4800 2450
-Connection ~ 5300 4850
 Text Label 2100 2100 2    59   ~ 0
 battery_in
 Wire Wire Line
@@ -426,4 +249,261 @@ Text Label 1100 5475 0    59   ~ 0
 battery_in
 Wire Wire Line
 	1800 5475 1100 5475
+Wire Wire Line
+	9050 3525 9050 3950
+Wire Wire Line
+	8975 3725 8975 4050
+Wire Wire Line
+	8975 4050 9050 4050
+Text Label 9050 4150 2    59   ~ 0
+DIO3
+Text Label 9050 4250 2    59   ~ 0
+DIO4
+$Comp
+L power:+5V #PWR0101
+U 1 1 60310C00
+P 8475 4050
+F 0 "#PWR0101" H 8475 3900 50  0001 C CNN
+F 1 "+5V" H 8490 4223 50  0000 C CNN
+F 2 "" H 8475 4050 50  0001 C CNN
+F 3 "" H 8475 4050 50  0001 C CNN
+	1    8475 4050
+	1    0    0    -1  
+$EndComp
+Text Label 9050 4450 2    59   ~ 0
+DIO0
+Text Label 9050 4550 2    59   ~ 0
+DIO1
+Text Label 9050 4650 2    59   ~ 0
+DIO2
+NoConn ~ 9050 4750
+Text Label 9050 4850 2    59   ~ 0
+MISO_RF2
+Text Label 9050 4950 2    59   ~ 0
+MOSI_RF2
+Text Label 9050 5050 2    59   ~ 0
+SCLK_RF2
+Text Label 9050 5250 2    59   ~ 0
+~RESET_RF2
+Text Label 9050 5350 2    59   ~ 0
+DIO5
+Wire Wire Line
+	9050 5450 9050 5550
+Wire Wire Line
+	9050 5550 9050 5650
+Connection ~ 9050 5550
+$Comp
+L power:GND #PWR0102
+U 1 1 6031823E
+P 9050 5650
+F 0 "#PWR0102" H 9050 5400 50  0001 C CNN
+F 1 "GND" H 9055 5477 50  0000 C CNN
+F 2 "" H 9050 5650 50  0001 C CNN
+F 3 "" H 9050 5650 50  0001 C CNN
+	1    9050 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2300 5675 2300
+Text Label 5200 5450 0    59   ~ 0
+GPIO0
+Text Label 4700 5450 2    59   ~ 0
+GPIO2
+Text Label 4700 5550 2    59   ~ 0
+~CS_1
+Text Label 5200 5550 0    59   ~ 0
+SCLK
+Text Label 5200 5650 0    59   ~ 0
+MOSI
+Text Label 5200 5750 0    59   ~ 0
+MISO
+Text Label 4700 5650 2    59   ~ 0
+~RESET
+$Comp
+L Device:R R18
+U 1 1 6031CFDB
+P 8475 4200
+F 0 "R18" H 8545 4246 50  0000 L CNN
+F 1 "0" H 8545 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8405 4200 50  0001 C CNN
+F 3 "~" H 8475 4200 50  0001 C CNN
+	1    8475 4200
+	1    0    0    -1  
+$EndComp
+Text Label 9050 5150 2    59   ~ 0
+~CS_RF2
+Wire Wire Line
+	8475 4350 9050 4350
+Text Label 4950 4175 0    59   ~ 0
+DIO3
+Text Label 4950 4275 0    59   ~ 0
+DIO4
+Text Label 4950 3875 0    59   ~ 0
+DIO0
+Text Label 4950 3975 0    59   ~ 0
+DIO1
+Text Label 4950 4075 0    59   ~ 0
+DIO2
+Text Label 4950 4375 0    59   ~ 0
+DIO5
+Wire Wire Line
+	4950 3875 4800 3875
+Wire Wire Line
+	4950 3975 4800 3975
+Wire Wire Line
+	4950 4075 4800 4075
+Wire Wire Line
+	4950 4175 4800 4175
+Wire Wire Line
+	4950 4275 4800 4275
+Wire Wire Line
+	4950 4375 4800 4375
+Text Label 4950 3775 0    59   ~ 0
+~CS_RF2
+Wire Wire Line
+	4950 3775 4800 3775
+Text Label 4950 3650 0    59   ~ 0
+RESET_RF2
+Wire Wire Line
+	4950 3650 4800 3650
+Wire Wire Line
+	5775 2400 5775 1225
+Wire Wire Line
+	5775 1225 5100 1225
+Text Label 5100 1225 0    59   ~ 0
+~RESET
+Text Label 5100 1350 0    59   ~ 0
+~CS_1
+Wire Wire Line
+	5100 1350 5675 1350
+Wire Wire Line
+	5675 1350 5675 2300
+Wire Wire Line
+	4800 2400 5775 2400
+Text Label 5100 1100 0    59   ~ 0
+GPIO0
+Text Label 5100 1000 0    59   ~ 0
+GPIO2
+Wire Wire Line
+	5100 1100 5875 1100
+Connection ~ 5675 2300
+Connection ~ 5775 2400
+Wire Wire Line
+	5775 2400 6200 2400
+Wire Wire Line
+	5675 2300 6200 2300
+Wire Wire Line
+	5975 1000 5975 2650
+Wire Wire Line
+	5875 1100 5875 2550
+Connection ~ 5875 2550
+Wire Wire Line
+	5875 2550 6200 2550
+$Comp
+L Connector:Conn_01x05_Male J3
+U 1 1 6040F77B
+P 9700 2650
+F 0 "J3" H 9672 2582 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 9672 2673 50  0000 R CNN
+F 2 "TU-HW RF LIB:Wurth_SMA_60312002114503" H 9700 2650 50  0001 C CNN
+F 3 "~" H 9700 2650 50  0001 C CNN
+	1    9700 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J6
+U 1 1 6041773E
+P 10150 3725
+F 0 "J6" H 10122 3657 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 10122 3748 50  0000 R CNN
+F 2 "TU-HW RF LIB:Wurth_SMA_60312002114503" H 10150 3725 50  0001 C CNN
+F 3 "~" H 10150 3725 50  0001 C CNN
+	1    10150 3725
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3525 9950 3525
+Connection ~ 9950 3725
+Wire Wire Line
+	9950 3725 9950 3825
+Connection ~ 9950 3825
+Wire Wire Line
+	9950 3825 9950 3925
+Connection ~ 9950 3925
+Wire Wire Line
+	9950 3625 9950 3725
+Wire Wire Line
+	8975 3725 9950 3725
+Wire Wire Line
+	9500 2550 9500 2650
+Connection ~ 9500 2650
+Wire Wire Line
+	9500 2650 9500 2750
+Connection ~ 9500 2750
+Wire Wire Line
+	9500 2750 9500 2850
+$Comp
+L power:GND #PWR01
+U 1 1 604243F5
+P 9500 2850
+F 0 "#PWR01" H 9500 2600 50  0001 C CNN
+F 1 "GND" H 9505 2677 50  0000 C CNN
+F 2 "" H 9500 2850 50  0001 C CNN
+F 3 "" H 9500 2850 50  0001 C CNN
+	1    9500 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9500 2850
+Wire Wire Line
+	4800 2000 5575 2000
+Wire Wire Line
+	4800 2100 5475 2100
+Wire Wire Line
+	4800 2200 5375 2200
+Text Label 4950 4675 0    59   ~ 0
+MISO_RF2
+Text Label 4950 4575 0    59   ~ 0
+MOSI_RF2
+Text Label 4950 4475 0    59   ~ 0
+SCLK_RF2
+Wire Wire Line
+	4800 4475 4950 4475
+Wire Wire Line
+	4800 4575 4950 4575
+Wire Wire Line
+	4800 4675 4950 4675
+Text Label 5100 1450 0    59   ~ 0
+SCLK
+Text Label 5100 1550 0    59   ~ 0
+MOSI
+Text Label 5100 1650 0    59   ~ 0
+MISO
+Wire Wire Line
+	5100 1450 5575 1450
+Wire Wire Line
+	5575 1450 5575 2000
+Connection ~ 5575 2000
+Wire Wire Line
+	5575 2000 6200 2000
+Wire Wire Line
+	5100 1550 5475 1550
+Wire Wire Line
+	5475 1550 5475 2100
+Connection ~ 5475 2100
+Wire Wire Line
+	5475 2100 6200 2100
+Wire Wire Line
+	5100 1650 5375 1650
+Wire Wire Line
+	5375 1650 5375 2200
+Connection ~ 5375 2200
+Wire Wire Line
+	5375 2200 6200 2200
+Connection ~ 5975 2650
+Wire Wire Line
+	5975 2650 6200 2650
+Wire Wire Line
+	4800 2650 5975 2650
+Wire Wire Line
+	5100 1000 5975 1000
 $EndSCHEMATC

@@ -15,11 +15,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 4550 2450 2    59   Output ~ 0
-SLCK
+SLCK_RF2
 Text HLabel 4550 2650 2    59   Output ~ 0
-MOSI
-Text HLabel 4550 2250 2    59   Output ~ 0
-~CS_2
+MOSI_RF2
 Text HLabel 4550 3150 2    50   Input ~ 0
 CAN_TX_1
 Text HLabel 4550 3050 2    50   Output ~ 0
@@ -365,20 +363,14 @@ Wire Notes Line
 	6600 6150 8050 6150
 Wire Notes Line
 	8050 6150 8050 3550
-Text HLabel 4550 4050 2    59   Output ~ 0
+Text HLabel 1950 4050 0    59   Output ~ 0
 HGM
-Text HLabel 4550 4150 2    59   Output ~ 0
+Text HLabel 1950 4150 0    59   Output ~ 0
 LNA_EN
-Text HLabel 4550 4250 2    59   Output ~ 0
+Text HLabel 1950 4250 0    59   Output ~ 0
 PA_EN
-Text HLabel 4550 4550 2    59   BiDi ~ 0
-RF_GPIO0
-Text HLabel 4550 4450 2    59   BiDi ~ 0
-RF_GPIO2
-Text HLabel 4550 4350 2    59   BiDi ~ 0
+Text HLabel 4550 4150 2    59   BiDi ~ 0
 RF_GPIO3
-Wire Wire Line
-	4550 2250 4150 2250
 Wire Wire Line
 	4150 2450 4550 2450
 Wire Wire Line
@@ -393,20 +385,16 @@ Text Notes 5050 3100 0    59   ~ 0
 CAN1
 Text Notes 5050 5000 0    59   ~ 0
 CAN3\n\n
-Text Notes 4875 2575 0    59   ~ 0
+Text Notes 5200 2600 0    59   ~ 0
 SPI1
 Wire Wire Line
-	4150 4050 4550 4050
+	2350 4250 1950 4250
+Wire Wire Line
+	2350 4150 1950 4150
+Wire Wire Line
+	2350 4050 1950 4050
 Wire Wire Line
 	4150 4150 4550 4150
-Wire Wire Line
-	4150 4250 4550 4250
-Wire Wire Line
-	4150 4350 4550 4350
-Wire Wire Line
-	4150 4450 4550 4450
-Wire Wire Line
-	4150 4550 4550 4550
 Text Label 1200 5150 0    59   ~ 0
 LED_1
 Text Label 5300 4650 2    59   ~ 0
@@ -419,10 +407,8 @@ Wire Wire Line
 	4150 4650 5300 4650
 Wire Wire Line
 	2350 5050 1200 5050
-Text HLabel 4550 2150 2    59   Output ~ 0
+Text HLabel 1950 5950 0    59   Output ~ 0
 ~CS_1
-Wire Wire Line
-	4550 2150 4150 2150
 Text Notes 9100 1975 0    59   ~ 0
 VREF\n
 Wire Wire Line
@@ -724,7 +710,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 2550 4550 2550
 Text HLabel 4550 2550 2    59   Input ~ 0
-MISO
+MISO_RF2
 Text Label 5300 3350 2    59   ~ 0
 SWCLK
 Text Label 5300 3250 2    59   ~ 0
@@ -801,4 +787,86 @@ Wire Wire Line
 Connection ~ 3150 1450
 Wire Wire Line
 	3150 1450 3050 1450
+Text HLabel 4550 3750 2    59   BiDi ~ 0
+RF2_DIO0
+Text HLabel 4550 3850 2    59   BiDi ~ 0
+RF2_DIO1
+Text HLabel 1950 4350 0    59   BiDi ~ 0
+RF2_DIO2
+Text HLabel 4550 5850 2    59   BiDi ~ 0
+RF2_DIO3
+Text HLabel 4550 3650 2    59   BiDi ~ 0
+RF2_DIO4
+Text HLabel 4550 5750 2    59   BiDi ~ 0
+RF2_DIO5
+Wire Wire Line
+	4550 2250 4150 2250
+Text HLabel 4550 2250 2    59   Output ~ 0
+~CS_2
+Wire Wire Line
+	5100 3450 5500 3450
+Text HLabel 5500 3450 2    59   Output ~ 0
+RESET_RF2
+Text HLabel 4550 4350 2    50   Output ~ 0
+~RESET
+$Comp
+L Device:R R19
+U 1 1 6039C6F6
+P 4300 4350
+F 0 "R19" V 4200 4300 50  0000 C CNN
+F 1 "0" V 4200 4425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 4350 50  0001 C CNN
+F 3 "~" H 4300 4350 50  0001 C CNN
+	1    4300 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 4350 4550 4350
+Wire Wire Line
+	4550 3750 4150 3750
+Wire Wire Line
+	4550 3850 4150 3850
+Wire Wire Line
+	1950 4350 2350 4350
+Wire Wire Line
+	4550 3650 4150 3650
+Wire Wire Line
+	4550 5750 4150 5750
+Wire Wire Line
+	4550 5850 4150 5850
+$Comp
+L Device:R R20
+U 1 1 603E4876
+P 2200 5950
+F 0 "R20" V 2100 5900 50  0000 C CNN
+F 1 "0" V 2100 6025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 5950 50  0001 C CNN
+F 3 "~" H 2200 5950 50  0001 C CNN
+	1    2200 5950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 5950 1950 5950
+Text HLabel 4550 6350 2    59   Output ~ 0
+SLCK
+Text HLabel 4550 6550 2    59   Output ~ 0
+MOSI
+Text HLabel 4550 6450 2    59   Input ~ 0
+MISO
+Wire Wire Line
+	4150 6350 4550 6350
+Wire Wire Line
+	4550 6450 4150 6450
+Text Notes 4900 6500 0    59   ~ 0
+SPI3
+Wire Wire Line
+	4550 6550 4150 6550
+Wire Wire Line
+	4150 4050 4550 4050
+Text HLabel 4550 4050 2    59   BiDi ~ 0
+RF_GPIO2
+Wire Wire Line
+	4150 3950 4550 3950
+Text HLabel 4550 3950 2    59   BiDi ~ 0
+RF_GPIO0
 $EndSCHEMATC
