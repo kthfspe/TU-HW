@@ -542,10 +542,10 @@ F5 "ANTENNA_OUT" O R 8600 2450 59
 F6 "RFIO" B L 7500 2200 59 
 $EndSheet
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H4
 U 1 1 60308938
 P 5150 6850
-F 0 "H?" H 5250 6896 50  0000 L CNN
+F 0 "H4" H 5250 6896 50  0000 L CNN
 F 1 "MountingHole" H 5250 6805 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.5mm" H 5150 6850 50  0001 C CNN
 F 3 "~" H 5150 6850 50  0001 C CNN
