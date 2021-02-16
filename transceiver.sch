@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -1098,22 +1098,8 @@ Can also use temperature compensated crystal.\nBut probably not neccecairy.
 Wire Wire Line
 	3750 1150 5400 1150
 Connection ~ 3750 1150
-Connection ~ 5400 1150
 Wire Wire Line
 	5400 1150 5400 1900
-Wire Wire Line
-	5675 1150 5400 1150
-$Comp
-L Connector:TestPoint TP2
-U 1 1 603797AA
-P 5675 1150
-F 0 "TP2" V 5629 1338 50  0000 L CNN
-F 1 "VDD_CC1200" V 5720 1338 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 5875 1150 50  0001 C CNN
-F 3 "~" H 5875 1150 50  0001 C CNN
-	1    5675 1150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5900 4350 6100 4350
 Wire Wire Line

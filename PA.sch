@@ -79,17 +79,6 @@ Wire Wire Line
 Wire Wire Line
 	6875 3700 6875 3425
 $Comp
-L Connector:TestPoint TP1
-U 1 1 601A7C22
-P 4125 975
-F 0 "TP1" V 4079 1163 50  0000 L CNN
-F 1 "VDD_CC1190" V 4170 1163 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4325 975 50  0001 C CNN
-F 3 "~" H 4325 975 50  0001 C CNN
-	1    4125 975 
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C11
 U 1 1 6019F615
 P 1800 1225
@@ -167,8 +156,6 @@ F 3 "" H 2400 1375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2400 975 
-Wire Wire Line
-	4000 975  4125 975 
 Wire Wire Line
 	4000 975  4000 1750
 Wire Wire Line
@@ -713,7 +700,6 @@ Wire Wire Line
 Connection ~ 5350 3275
 Wire Wire Line
 	2400 975  4000 975 
-Connection ~ 4000 975 
 Connection ~ 2150 3575
 Wire Wire Line
 	6750 2675 8325 2675
@@ -810,10 +796,65 @@ F 3 "https://product.tdk.com/search-template/en/documents/data_sheet/40/ds/mc/B9
 $EndComp
 Wire Wire Line
 	2100 3575 2150 3575
-Wire Wire Line
-	2150 3575 2200 3575
 Connection ~ 2100 3575
 Connection ~ 2200 3575
 Wire Wire Line
 	2200 3575 2300 3575
+$Comp
+L power:GND #PWR0103
+U 1 1 602D8673
+P 1875 6300
+F 0 "#PWR0103" H 1875 6050 50  0001 C CNN
+F 1 "GND" H 1880 6127 50  0000 C CNN
+F 2 "" H 1875 6300 50  0001 C CNN
+F 3 "" H 1875 6300 50  0001 C CNN
+	1    1875 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x12_Female J7
+U 1 1 602E7893
+P 2375 6100
+F 0 "J7" V 2540 6030 50  0000 C CNN
+F 1 "Conn_01x12_Female" V 2449 6030 50  0000 C CNN
+F 2 "TU-HW RF LIB:BMIS202F" H 2375 6100 50  0001 C CNN
+F 3 "~" H 2375 6100 50  0001 C CNN
+	1    2375 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1875 6300 1975 6300
+Connection ~ 1875 6300
+Connection ~ 1975 6300
+Wire Wire Line
+	1975 6300 2075 6300
+Connection ~ 2075 6300
+Wire Wire Line
+	2075 6300 2175 6300
+Connection ~ 2175 6300
+Wire Wire Line
+	2175 6300 2275 6300
+Connection ~ 2275 6300
+Wire Wire Line
+	2275 6300 2375 6300
+Connection ~ 2375 6300
+Wire Wire Line
+	2375 6300 2475 6300
+Connection ~ 2475 6300
+Wire Wire Line
+	2475 6300 2575 6300
+Connection ~ 2575 6300
+Wire Wire Line
+	2575 6300 2675 6300
+Connection ~ 2675 6300
+Wire Wire Line
+	2675 6300 2775 6300
+Connection ~ 2775 6300
+Wire Wire Line
+	2775 6300 2875 6300
+Connection ~ 2875 6300
+Wire Wire Line
+	2875 6300 2975 6300
+Text Label 3175 975  0    59   ~ 0
+VDD_CC1190
 $EndSCHEMATC
