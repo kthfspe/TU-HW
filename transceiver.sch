@@ -633,7 +633,7 @@ Connection ~ 8650 5300
 Wire Wire Line
 	8650 5300 10000 5300
 Text HLabel 10000 5300 2    59   BiDi ~ 0
-CC1200_RFIO
+RFIO
 Connection ~ 7850 5300
 Wire Wire Line
 	7850 5300 8150 5300
@@ -845,8 +845,6 @@ Wire Wire Line
 	3450 3800 3950 3800
 Wire Notes Line
 	7850 4650 9500 4650
-Text Notes 7900 4600 0    59   ~ 0
-Can be replaced by \nhttps://www.johansontechnology.com/\ndatasheets/0900PC15J0013/0900PC15J0013.pdf
 Wire Wire Line
 	6700 3650 6700 3700
 $Comp
@@ -1095,8 +1093,6 @@ $EndComp
 Connection ~ 2000 3200
 Wire Wire Line
 	3350 2900 3350 3000
-Text Notes 4425 7625 0    59   ~ 0
-Reference design by TI:\nhttps://www.ti.com/tool/CC1120-CC1190EM868RD\n
 Text Notes 1025 2600 0    59   ~ 0
 Can also use temperature compensated crystal.\nBut probably not neccecairy.
 Wire Wire Line

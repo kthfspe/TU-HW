@@ -373,22 +373,6 @@ F 3 "" H 6700 5075 50  0001 C CNN
 	1    6700 5075
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5DEB3867
-P 6375 4450
-AR Path="/5DE839B2/5DEB3867" Ref="#FLG?"  Part="1" 
-AR Path="/5DE839FC/5DEB3867" Ref="#FLG?"  Part="1" 
-AR Path="/60145B96/5DEB3867" Ref="#FLG0102"  Part="1" 
-F 0 "#FLG0102" H 6375 4525 50  0001 C CNN
-F 1 "PWR_FLAG" H 6375 4623 50  0000 C CNN
-F 2 "" H 6375 4450 50  0001 C CNN
-F 3 "~" H 6375 4450 50  0001 C CNN
-	1    6375 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6375 4450 6375 4575
 Text Notes 6425 4200 0    50   ~ 0
 tells ERC that this is\na power source
 Connection ~ 6375 4575
@@ -442,6 +426,22 @@ F 1 "+24V" H 5215 2123 50  0000 C CNN
 F 2 "" H 5200 1950 50  0001 C CNN
 F 3 "" H 5200 1950 50  0001 C CNN
 	1    5200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 4450 6375 4575
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DEB3867
+P 6375 4450
+AR Path="/5DE839B2/5DEB3867" Ref="#FLG?"  Part="1" 
+AR Path="/5DE839FC/5DEB3867" Ref="#FLG?"  Part="1" 
+AR Path="/60145B96/5DEB3867" Ref="#FLG0102"  Part="1" 
+F 0 "#FLG0102" H 6375 4525 50  0001 C CNN
+F 1 "PWR_FLAG" H 6375 4623 50  0000 C CNN
+F 2 "" H 6375 4450 50  0001 C CNN
+F 3 "~" H 6375 4450 50  0001 C CNN
+	1    6375 4450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

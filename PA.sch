@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -18,30 +18,8 @@ Text Notes 2650 2550 2    59   ~ 0
 SAW filter may not be neccecairy. \nExact component not decided yet.
 Text Notes 2975 4300 2    59   ~ 0
 SAW filter is used to pass regulation by\ndecreasing phasenoise at the band edges.\nIf not used output power may have to be reduced.
-Connection ~ 1650 3275
-Wire Wire Line
-	1650 3275 1550 3275
-Wire Wire Line
-	1850 3275 1650 3275
-Wire Wire Line
-	1650 2825 1650 3275
-Wire Wire Line
-	2000 2825 1650 2825
-Wire Wire Line
-	2300 2825 2600 2825
-$Comp
-L Device:R R7
-U 1 1 60230E08
-P 2150 2825
-F 0 "R7" V 1943 2825 50  0000 C CNN
-F 1 "0" V 2034 2825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 2825 50  0001 C CNN
-F 3 "~" H 2150 2825 50  0001 C CNN
-	1    2150 2825
-	0    -1   1    0   
-$EndComp
 Text HLabel 1550 3275 0    59   BiDi ~ 0
-CC1190_RFIO
+RFIO
 $Comp
 L power:GND #PWR013
 U 1 1 601F291A
@@ -55,32 +33,6 @@ F 3 "" H 2150 3675 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 3575 2150 3675
-Wire Wire Line
-	3250 3275 3250 3375
-Wire Wire Line
-	3250 3775 3250 3675
-$Comp
-L power:GND #PWR011
-U 1 1 601E7239
-P 3250 3775
-F 0 "#PWR011" H 3250 3525 50  0001 C CNN
-F 1 "GND" H 3255 3602 50  0000 C CNN
-F 2 "" H 3250 3775 50  0001 C CNN
-F 3 "" H 3250 3775 50  0001 C CNN
-	1    3250 3775
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C C17
-U 1 1 601E6BEF
-P 3250 3525
-F 0 "C17" H 3365 3571 50  0000 L CNN
-F 1 "0.8p" H 3365 3480 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 3375 50  0001 C CNN
-F 3 "~" H 3250 3525 50  0001 C CNN
-	1    3250 3525
-	-1   0    0    -1  
-$EndComp
 Text HLabel 7875 3500 2    59   Input ~ 0
 PA_EN
 Text HLabel 7875 3700 2    59   Input ~ 0
@@ -755,8 +707,6 @@ F 3 "~" H 3750 3275 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3600 3275 3250 3275
-Wire Wire Line
 	3900 3275 5350 3275
 Wire Wire Line
 	5350 3175 5350 3275
@@ -764,38 +714,7 @@ Connection ~ 5350 3275
 Wire Wire Line
 	2400 975  4000 975 
 Connection ~ 4000 975 
-$Comp
-L TU-rescue:SAW_RF_filterB3725-B39871B3725U410 FL1
-U 1 1 6035BDD1
-P 2150 3275
-AR Path="/6035BDD1" Ref="FL1"  Part="1" 
-AR Path="/6014566F/6035BDD1" Ref="FL1"  Part="1" 
-F 0 "FL1" H 2150 3642 50  0000 C CNN
-F 1 "SAW_RF_filterB3725" H 2150 3551 50  0000 C CNN
-F 2 "TU-HW RF LIB:SON120P300X300X110-6N" H 2150 3625 50  0001 C CNN
-F 3 "https://product.tdk.com/search-template/en/documents/data_sheet/40/ds/mc/B9482.pdf" H 2080 3305 50  0001 C CNN
-	1    2150 3275
-	1    0    0    -1  
-$EndComp
-Connection ~ 2100 3575
-Wire Wire Line
-	2100 3575 2000 3575
-Connection ~ 2200 3575
-Wire Wire Line
-	2200 3575 2150 3575
-Wire Wire Line
-	2200 3575 2300 3575
 Connection ~ 2150 3575
-Wire Wire Line
-	2150 3575 2100 3575
-Connection ~ 3250 3275
-Wire Wire Line
-	3250 3275 2600 3275
-Wire Wire Line
-	2600 2825 2600 3275
-Connection ~ 2600 3275
-Wire Wire Line
-	2600 3275 2450 3275
 Wire Wire Line
 	6750 2675 8325 2675
 Wire Wire Line
@@ -816,4 +735,85 @@ Wire Wire Line
 	7150 3600 7875 3600
 Wire Wire Line
 	6875 3700 7875 3700
+Wire Wire Line
+	2600 3275 2450 3275
+Connection ~ 2600 3275
+Wire Wire Line
+	2600 2825 2600 3275
+$Comp
+L Device:R R7
+U 1 1 60230E08
+P 2150 2825
+F 0 "R7" V 1943 2825 50  0000 C CNN
+F 1 "0" V 2034 2825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 2825 50  0001 C CNN
+F 3 "~" H 2150 2825 50  0001 C CNN
+	1    2150 2825
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2300 2825 2600 2825
+Wire Wire Line
+	2000 2825 1650 2825
+Wire Wire Line
+	1850 3275 1650 3275
+Wire Wire Line
+	1650 3275 1550 3275
+Connection ~ 1650 3275
+Wire Wire Line
+	1650 2825 1650 3275
+Connection ~ 3250 3275
+Wire Wire Line
+	3250 3275 2600 3275
+Wire Wire Line
+	3600 3275 3250 3275
+$Comp
+L Device:C C17
+U 1 1 601E6BEF
+P 3250 3525
+F 0 "C17" H 3365 3571 50  0000 L CNN
+F 1 "0.8p" H 3365 3480 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 3375 50  0001 C CNN
+F 3 "~" H 3250 3525 50  0001 C CNN
+	1    3250 3525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 601E7239
+P 3250 3775
+F 0 "#PWR011" H 3250 3525 50  0001 C CNN
+F 1 "GND" H 3255 3602 50  0000 C CNN
+F 2 "" H 3250 3775 50  0001 C CNN
+F 3 "" H 3250 3775 50  0001 C CNN
+	1    3250 3775
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3775 3250 3675
+Wire Wire Line
+	3250 3275 3250 3375
+Wire Wire Line
+	2150 3575 2200 3575
+Wire Wire Line
+	2000 3575 2100 3575
+$Comp
+L B39871B3725U410:SAW_RF_filterB3725 FL1
+U 1 1 603F0280
+P 2150 3275
+F 0 "FL1" H 2150 3642 50  0000 C CNN
+F 1 "SAW_RF_filterB3725" H 2150 3551 50  0000 C CNN
+F 2 "TU-HW RF LIB:SON120P300X300X110-6N" H 2150 3625 50  0001 C CNN
+F 3 "https://product.tdk.com/search-template/en/documents/data_sheet/40/ds/mc/B9482.pdf" H 2080 3305 50  0001 C CNN
+	1    2150 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3575 2150 3575
+Wire Wire Line
+	2150 3575 2200 3575
+Connection ~ 2100 3575
+Connection ~ 2200 3575
+Wire Wire Line
+	2200 3575 2300 3575
 $EndSCHEMATC

@@ -44,7 +44,7 @@ Wire Notes Line
 	6100 1550 8750 1550
 Text Notes 6100 1500 0    59   ~ 0
 RF front end\n
-Text Notes 9475 1750 0    59   ~ 0
+Text Notes 9500 2200 0    59   ~ 0
 SMA antenna connector
 $Comp
 L Connector:Conn_01x06_Male J1
@@ -52,7 +52,7 @@ U 1 1 602153AD
 P 1200 2300
 F 0 "J1" H 1308 2681 50  0000 C CNN
 F 1 "Conn_01x06_Male" H 1308 2590 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1200 2300 50  0001 C CNN
+F 2 "TU-HW RF LIB:TE_282834-6" H 1200 2300 50  0001 C CNN
 F 3 "~" H 1200 2300 50  0001 C CNN
 	1    1200 2300
 	1    0    0    -1  
@@ -69,17 +69,6 @@ Wire Notes Line
 	8750 1550 8750 3450
 Wire Notes Line
 	6100 1550 6100 3450
-$Sheet
-S 7500 1900 1100 1400
-U 6014566F
-F0 "CC1190" 59
-F1 "PA.sch" 59
-F2 "HGM" I L 7500 3000 59 
-F3 "LNA_EN" I L 7500 3100 59 
-F4 "PA_EN" I L 7500 3200 59 
-F5 "ANTENNA_OUT" O R 8600 2450 59 
-F6 "CC1190_RFIO" B L 7500 2200 59 
-$EndSheet
 Wire Wire Line
 	3450 2200 3700 2200
 Wire Wire Line
@@ -100,8 +89,6 @@ Wire Wire Line
 	4800 3200 7500 3200
 Wire Wire Line
 	7150 2200 7500 2200
-Wire Wire Line
-	8600 2450 9500 2450
 $Sheet
 S 6200 1900 950  950 
 U 60145F44
@@ -115,7 +102,7 @@ F6 "~RESET" I L 6200 2400 59
 F7 "GPIO0" B L 6200 2550 59 
 F8 "GPIO2" B L 6200 2650 59 
 F9 "GPIO3" B L 6200 2750 59 
-F10 "CC1200_RFIO" B R 7150 2200 59 
+F10 "RFIO" B R 7150 2200 59 
 $EndSheet
 $Comp
 L power:GND #PWR074
@@ -402,12 +389,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x05_Male J3
 U 1 1 6040F77B
-P 9700 2650
-F 0 "J3" H 9672 2582 50  0000 R CNN
-F 1 "Conn_01x05_Male" H 9672 2673 50  0000 R CNN
-F 2 "TU-HW RF LIB:Wurth_SMA_60312002114503" H 9700 2650 50  0001 C CNN
-F 3 "~" H 9700 2650 50  0001 C CNN
-	1    9700 2650
+P 10150 2650
+F 0 "J3" H 10122 2582 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 10122 2673 50  0000 R CNN
+F 2 "TU-HW RF LIB:Wurth_SMA_60312002114503" H 10150 2650 50  0001 C CNN
+F 3 "~" H 10150 2650 50  0001 C CNN
+	1    10150 2650
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -434,26 +421,17 @@ Wire Wire Line
 	9950 3625 9950 3725
 Wire Wire Line
 	8975 3725 9950 3725
-Wire Wire Line
-	9500 2550 9500 2650
-Connection ~ 9500 2650
-Wire Wire Line
-	9500 2650 9500 2750
-Connection ~ 9500 2750
-Wire Wire Line
-	9500 2750 9500 2850
 $Comp
 L power:GND #PWR01
 U 1 1 604243F5
-P 9500 2850
-F 0 "#PWR01" H 9500 2600 50  0001 C CNN
-F 1 "GND" H 9505 2677 50  0000 C CNN
-F 2 "" H 9500 2850 50  0001 C CNN
-F 3 "" H 9500 2850 50  0001 C CNN
-	1    9500 2850
+P 9950 2850
+F 0 "#PWR01" H 9950 2600 50  0001 C CNN
+F 1 "GND" H 9955 2677 50  0000 C CNN
+F 2 "" H 9950 2850 50  0001 C CNN
+F 3 "" H 9950 2850 50  0001 C CNN
+	1    9950 2850
 	1    0    0    -1  
 $EndComp
-Connection ~ 9500 2850
 Wire Wire Line
 	4800 2000 5575 2000
 Wire Wire Line
@@ -506,4 +484,61 @@ Wire Wire Line
 	4800 2650 5975 2650
 Wire Wire Line
 	5100 1000 5975 1000
+Text Notes 6875 1450 0    59   ~ 0
+Reference design by TI:\nhttps://www.ti.com/tool/CC1120-CC1190EM868RD\n
+Wire Wire Line
+	9950 2550 9950 2650
+Wire Wire Line
+	8600 2450 9950 2450
+Connection ~ 9950 2650
+Wire Wire Line
+	9950 2650 9950 2750
+Connection ~ 9950 2750
+Wire Wire Line
+	9950 2750 9950 2850
+Connection ~ 9950 2850
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 602E5094
+P 5150 7075
+F 0 "H1" H 5250 7121 50  0000 L CNN
+F 1 "MountingHole" H 5250 7030 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 5150 7075 50  0001 C CNN
+F 3 "~" H 5150 7075 50  0001 C CNN
+	1    5150 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 602E5AB8
+P 5150 7300
+F 0 "H2" H 5250 7346 50  0000 L CNN
+F 1 "MountingHole" H 5250 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 5150 7300 50  0001 C CNN
+F 3 "~" H 5150 7300 50  0001 C CNN
+	1    5150 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 602E7750
+P 5150 7525
+F 0 "H3" H 5250 7571 50  0000 L CNN
+F 1 "MountingHole" H 5250 7480 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 5150 7525 50  0001 C CNN
+F 3 "~" H 5150 7525 50  0001 C CNN
+	1    5150 7525
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 7500 1900 1100 1400
+U 6014566F
+F0 "CC1190" 59
+F1 "PA.sch" 59
+F2 "HGM" I L 7500 3000 59 
+F3 "LNA_EN" I L 7500 3100 59 
+F4 "PA_EN" I L 7500 3200 59 
+F5 "ANTENNA_OUT" O R 8600 2450 59 
+F6 "RFIO" B L 7500 2200 59 
+$EndSheet
 $EndSCHEMATC
