@@ -284,7 +284,7 @@ MOSI_RF2
 Text Label 9050 5050 2    59   ~ 0
 SCLK_RF2
 Text Label 9050 5250 2    59   ~ 0
-~RESET_RF2
+RESET_RF2
 Text Label 9050 5350 2    59   ~ 0
 DIO5
 Wire Wire Line

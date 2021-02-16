@@ -804,8 +804,8 @@ Wire Wire Line
 Text HLabel 4550 2250 2    59   Output ~ 0
 ~CS_2
 Wire Wire Line
-	5100 3450 5500 3450
-Text HLabel 5500 3450 2    59   Output ~ 0
+	4150 6750 4550 6750
+Text HLabel 4550 6750 2    59   Output ~ 0
 RESET_RF2
 Text HLabel 4550 4350 2    50   Output ~ 0
 ~RESET
