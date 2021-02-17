@@ -385,7 +385,7 @@ Text Notes 5050 3100 0    59   ~ 0
 CAN1
 Text Notes 5050 5000 0    59   ~ 0
 CAN3\n\n
-Text Notes 5200 2600 0    59   ~ 0
+Text Notes 5100 2600 0    59   ~ 0
 SPI1
 Wire Wire Line
 	2350 4250 1950 4250

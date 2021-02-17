@@ -44,8 +44,8 @@ Wire Notes Line
 	6100 1550 8750 1550
 Text Notes 6100 1500 0    59   ~ 0
 RF front end\n
-Text Notes 9500 2200 0    59   ~ 0
-SMA antenna connector
+Text Notes 9500 2275 0    59   ~ 0
+SMA antenna connectors\n
 $Comp
 L Connector:Conn_01x06_Male J1
 U 1 1 602153AD
@@ -321,18 +321,6 @@ Text Label 9050 5150 2    59   ~ 0
 ~CS_RF2
 Wire Wire Line
 	8475 4350 9050 4350
-Text Label 4950 4175 0    59   ~ 0
-DIO3
-Text Label 4950 4275 0    59   ~ 0
-DIO4
-Text Label 4950 3875 0    59   ~ 0
-DIO0
-Text Label 4950 3975 0    59   ~ 0
-DIO1
-Text Label 4950 4075 0    59   ~ 0
-DIO2
-Text Label 4950 4375 0    59   ~ 0
-DIO5
 Wire Wire Line
 	4950 3875 4800 3875
 Wire Wire Line
@@ -345,14 +333,8 @@ Wire Wire Line
 	4950 4275 4800 4275
 Wire Wire Line
 	4950 4375 4800 4375
-Text Label 4950 3775 0    59   ~ 0
-~CS_RF2
 Wire Wire Line
 	4950 3775 4800 3775
-Text Label 4950 3650 0    59   ~ 0
-RESET_RF2
-Wire Wire Line
-	4950 3650 4800 3650
 Wire Wire Line
 	5775 2400 5775 1225
 Wire Wire Line
@@ -391,7 +373,7 @@ L Connector:Conn_01x05_Male J3
 U 1 1 6040F77B
 P 10150 2650
 F 0 "J3" H 10122 2582 50  0000 R CNN
-F 1 "Conn_01x05_Male" H 10122 2673 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 10122 2673 50  0001 R CNN
 F 2 "TU-HW RF LIB:Wurth_SMA_60312002114503" H 10150 2650 50  0001 C CNN
 F 3 "~" H 10150 2650 50  0001 C CNN
 	1    10150 2650
@@ -402,7 +384,7 @@ L Connector:Conn_01x05_Male J6
 U 1 1 6041773E
 P 10150 3725
 F 0 "J6" H 10122 3657 50  0000 R CNN
-F 1 "Conn_01x05_Male" H 10122 3748 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 10122 3748 50  0001 R CNN
 F 2 "TU-HW RF LIB:Wurth_SMA_60312002114503" H 10150 3725 50  0001 C CNN
 F 3 "~" H 10150 3725 50  0001 C CNN
 	1    10150 3725
@@ -438,12 +420,6 @@ Wire Wire Line
 	4800 2100 5475 2100
 Wire Wire Line
 	4800 2200 5375 2200
-Text Label 4950 4675 0    59   ~ 0
-MISO_RF2
-Text Label 4950 4575 0    59   ~ 0
-MOSI_RF2
-Text Label 4950 4475 0    59   ~ 0
-SCLK_RF2
 Wire Wire Line
 	4800 4475 4950 4475
 Wire Wire Line
@@ -552,4 +528,36 @@ F 3 "~" H 5150 6850 50  0001 C CNN
 	1    5150 6850
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	10375 2350 10375 4200
+Wire Notes Line
+	10375 4200 9650 4200
+Wire Notes Line
+	9650 4200 9650 2350
+Wire Notes Line
+	9650 2350 10375 2350
+Wire Wire Line
+	4950 3650 4800 3650
+Text Label 4950 4475 0    59   ~ 0
+SCLK_RF2
+Text Label 4950 4575 0    59   ~ 0
+MOSI_RF2
+Text Label 4950 4675 0    59   ~ 0
+MISO_RF2
+Text Label 4950 3650 0    59   ~ 0
+RESET_RF2
+Text Label 4950 3775 0    59   ~ 0
+~CS_RF2
+Text Label 4950 4375 0    59   ~ 0
+DIO5
+Text Label 4950 4075 0    59   ~ 0
+DIO2
+Text Label 4950 3975 0    59   ~ 0
+DIO1
+Text Label 4950 3875 0    59   ~ 0
+DIO0
+Text Label 4950 4275 0    59   ~ 0
+DIO4
+Text Label 4950 4175 0    59   ~ 0
+DIO3
 $EndSCHEMATC
