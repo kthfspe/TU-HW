@@ -5645,7 +5645,7 @@
   (gr_line (start 74.93 139.7) (end 73.66 139.7) (layer Edge.Cuts) (width 0.05) (tstamp 602CF0EA))
   (gr_line (start 118.11 30.48) (end 116.84 30.48) (layer Edge.Cuts) (width 0.05) (tstamp 602CF0DD))
   (gr_line (start 77.3 127) (end 80.9 127) (layer F.SilkS) (width 0.12))
-  (gr_text "1\n2\n3" (at 79.1 127.5 90) (layer F.SilkS)
+  (gr_text "1\n2\n3" (at 79.1 127.5 90) (layer F.SilkS) (tstamp 6071D920)
     (effects (font (size 0.75 0.75) (thickness 0.125)))
   )
   (gr_line (start 113.4364 64.2366) (end 113.411 64.135) (layer F.SilkS) (width 0.12) (tstamp 6030C6CE))

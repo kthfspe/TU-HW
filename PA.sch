@@ -33,9 +33,9 @@ F 3 "" H 2150 3675 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 3575 2150 3675
-Text HLabel 7875 3500 2    59   Input ~ 0
-PA_EN
 Text HLabel 7875 3700 2    59   Input ~ 0
+PA_EN
+Text HLabel 7875 3500 2    59   Input ~ 0
 HGM
 Text HLabel 7875 3600 2    59   Input ~ 0
 LNA_EN
